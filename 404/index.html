@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kai Agent - AI Voice Platform</title>
+  <meta name="description" content="Redirecting to Kai Agent application...">
+  <script>
+    // GitHub Pages SPA redirect - consistent with existing sessionStorage approach
+    (function() {
+      // Store the current path and redirect to index.html
+      const path = window.location.pathname.slice(1); // Remove leading slash
+      const query = window.location.search;
+      const hash = window.location.hash;
+      
+      if (path && path !== '404.html') {
+        // Store the intended path in sessionStorage for AppContent to handle
+        sessionStorage.setItem('redirect-path', path + query + hash);
+        console.log('📍 404 redirect: stored path', path + query + hash);
+      }
+      
+      // Redirect to the main app
+      window.location.replace('/' + query + hash);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to Kai Agent...</p>
+</body>
+</html>

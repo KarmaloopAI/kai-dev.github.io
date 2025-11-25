@@ -1,0 +1,16 @@
+{
+  "name": "Kai Agent",
+  "short_name": "Kai Agent",
+  "description": "AI Voice Agent Platform for Business",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#0a0a0b",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
